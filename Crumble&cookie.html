@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUMBLE & COOKIES - قائمة الطعام</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #f7f3e8; 
+            color: #332211; 
+            margin: 0;
+            padding: 0;
+            direction: rtl; 
+            text-align: right;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: #6a4a35; 
+            padding: 50px 20px 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 3.5em; 
+            color: #332211; 
+            font-weight: 800; 
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            color: #fffaf0;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        
+        .menu-section {
+            margin: 40px 0;
+            padding: 20px;
+        }
+        
+        .section-title {
+            color: #6a4a35; 
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #dac2a1;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px;
+            justify-content: center;
+        }
+        
+        .menu-item {
+            background-color: #fffaf0; 
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden; 
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .item-image {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover; 
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .item-name-en {
+            display: block;
+            color: #332211; 
+            font-weight: bold;
+            font-size: 1.25em;
+            margin-bottom: 10px;
+            padding: 0 10px;
+        }
+        
+        .price-tag {
+            display: inline-block;
+            background-color: #332211; 
+            color: #ffffff; 
+            padding: 6px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;
+        }
+        
+        .footer {
+            background-color: #332211; 
+            color: #ffffff; 
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+        }
+        
+        .location {
+            color: #ffffff;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+        
+        .phone-number {
+            color: #ffffff; 
+            text-decoration: none; 
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .phone-number:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .menu-grid {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+    </head>
+<body>
+    <header class="header">
+        <h1>CRUMBLE & COOKIES</h1>
+        <p class="tagline">نكهة تدوم... وكوب يروي.</p>
+    </header>
+
+    <main class="container">
+        <section class="menu-section">
+            <h2 class="section-title">DRINKS STATION ☕</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <img src="icelatte.jpg" alt="Ice latte coffee" class="item-image">
+                    <span class="item-name-en">Ice Latte Coffee</span>
+                    <div class="price-tag">15 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="icechocolatemocha.jpg" alt="Ice chocolate mocha" class="item-image">
+                    <span class="item-name-en">Ice Chocolate Mocha</span>
+                    <div class="price-tag">20 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="hotchocolateclassic.jpg" alt="Hot chocolate classic" class="item-image">
+                    <span class="item-name-en">Hot Chocolate Classic</span>
+                    <div class="price-tag">15 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="hotwhitechocolata.jpg" alt="White hot chocolate" class="item-image">
+                    <span class="item-name-en">White Hot Chocolate</span>
+                    <div class="price-tag">15 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="karaktea.jpg" alt="Karak tea" class="item-image">
+                    <span class="item-name-en">Karak Tea</span>
+                    <div class="price-tag">10 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="strawberrymilkshake.jpg" alt="Strawberry milkshake" class="item-image">
+                    <span class="item-name-en">Strawberry Milkshake</span>
+                    <div class="price-tag">20 ر.س</div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="chocolatemilkshake.jpg" alt="Chocolate milkshake" class="item-image">
+                    <span class="item-name-en">Chocolate Milkshake</span>
+                    <div class="price-tag">20 ر.س</div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="vanillamilkshake.jpg" alt="Vanilla milkshake" class="item-image">
+                    <span class="item-name-en">Vanilla Milkshake</span>
+                    <div class="price-tag">20 ر.س</div>
+                </div>
+
+                <div> class="menu-item">
+                    <img src="espressocoffee.jpg" alt="Espresso" class="item-image">
+                    <span class="item-name-en">Espresso</span>
+                    <div class="price-tag">13 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="icematcha.jpg" alt="Ice matcha" class="item-image">
+                    <span class="item-name-en">Ice Matcha</span>
+                    <div class="price-tag">17 ر.س</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-title">COOKIES Station 🍪</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <img src="lemoncookie.jpg" alt="Lemon cookies" class="item-image">
+                    <span class="item-name-en">Lemon Cookies</span>
+                    <div class="price-tag">7 ر.س</div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="browniecookie.jpg" alt="Brownie cookies" class="item-image">
+                    <span class="item-name-en">Brownie Cookies</span>
+                    <div class="price-tag">7 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="doublechocolate.jpg" alt="Double chocolate cookies" class="item-image">
+                    <span class="item-name-en">Double Chocolate Cookies</span>
+                    <div class="price-tag">9 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="Lotes.jpg" alt="Lotes cookies" class="item-image">
+                    <span class="item-name-en">Lotes Cookies</span>
+                    <div class="price-tag">9 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="nutella.jpg" alt="Nutella cookies" class="item-image">
+                    <span class="item name">Nutella Cookies</span>
+                    <div class="price-tag">9 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="chocolatechips.jpg" alt="Chocolate chips cookies" class="item-image">
+                    <span class="item-name-en">Chocolate Chip Cookies</span>
+                    <div class="price-tag">7 ر.س</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="Pistachiocookie.jpg" alt="White pistachios cookies" class="item-image">
+                    <span class="item-name-en">White Pistachios Cookies</span>
+                    <div class="price-tag">9 ر.س</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="contact-info">
+            <span class="location">📍 SA, Riyadh</span>
+            <a href="tel:0594860441" class="phone-number">📞 0594860441</a>
+        </p>
+        <p>&copy; 2025 CRUMBLE & COOKIES. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
